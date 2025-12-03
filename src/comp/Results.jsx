@@ -28,18 +28,20 @@ const Results = () => {
   }, []);
 
   return (
-    <div className=" py-32">
+    <div id="why" className=" p-mobile-primary">
       <div className=" flex flex-col gap-4">
-        <h2 className=" font-instrument text-3xl md:text-7xl">
-          Website That grow with you{" "}
+       <div className=" my-5 mt-10 md:mt-20">
+         <h2 className=" font-instrument text-4xl md:text-7xl">
+          Website That drive sales
         </h2>
-        <p className=" text-lg text-neutral-600">
+        <p className=" text-lg md:text-xl mt-2 text-neutral-600">
           What we can help you to achieve?
         </p>
-        <div className=" flex  gap-4 w-full max-w-7xl items-stretch text-start">
-          <div className=" shadow  border rounded-xl ">
+       </div>
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 w-full max-w-7xl items-stretch text-start">
+          <div className=" shadow  border min-h- rounded-xl ">
             <div
-              className=" flex flex-col justify-center font-openSans overflow-hidden max-w-lg items-center
+              className=" flex flex-col justify-between font-openSans overflow-hidden max-w-lg items-center
               min-h-40 h-full w-full relative rounded-xl
               bg-[radial-gradient(ellipse_at_80%_10%,rgba(80,120,255,1)_4%,rgba(0,0,0,1)_40%)]
               
@@ -59,7 +61,7 @@ const Results = () => {
               <div className="bg-white  rounded-sm shadow-[0_0_18px_6px_rgba(255,193,1,0.25)] overflow-hidden z-20 my-10 w-72 border border-neutral-200/60 font-sans">
                 {/* CMS Header */}
                 <div className="bg-neutral-50/50 p-3 border-b border-neutral-200 flex items-center gap-2.5">
-                  <div className="bg-purple-600 p-1.5 rounded-md shadow-sm">
+                  <div className="bg-purple-600 p-1.5 rounded-xs shadow-sm">
                     <LayoutTemplate size={14} className="text-white" />
                   </div>
                   <div className="flex flex-col">
@@ -106,11 +108,11 @@ const Results = () => {
                       </div>
                       <motion.div layout>
                         {tick >= item.t ? (
-                          <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-sm border border-emerald-200/50">
+                          <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-xs border border-emerald-200/50">
                             Published
                           </span>
                         ) : (
-                          <span className="text-[10px] font-semibold text-amber-700 bg-amber-100/80 px-2 py-0.5 rounded-sm border border-amber-200/50">
+                          <span className="text-[10px] font-semibold text-amber-700 bg-amber-100/80 px-2 py-0.5 rounded-xs border border-amber-200/50">
                             Drafting
                           </span>
                         )}
@@ -125,14 +127,14 @@ const Results = () => {
                   <span className=" font-medium">Launch Campaigns Faster. </span>
                   <span className=" text-neutral-200 font-light">
                     {" "}
-                   Launch campaigns in minutes, not weeks—without waiting on
+                   Create campaign pages in minutes, not weeks—without waiting on
                     developers.
                   </span>
                 </p>
               </div>
             </div>
           </div>
-          <div className=" shadow  border rounded-xl ">
+          <div className=" shadow  border min-h- rounded-xl ">
             <div
               className=" flex flex-col justify-between font-openSans overflow-hidden max-w-lg items-center
               min-h-40 h-full w-full relative rounded-xl bg-black
@@ -140,7 +142,7 @@ const Results = () => {
             "
             >
               <SingularityShaders
-                className=" absolute translate-x-1 top-0 z-10 left-0 h-4/5  w-full"
+                className=" absolute translate-x-1 top-0 z-10 left-0 h-4/5 min-h-[400px]  w-full"
                 speed={1.0}
                 intensity={1.2}
                 size={1}
@@ -195,10 +197,10 @@ const Results = () => {
                     <div className="absolute bg-neutral-900  rounded-full " />
                     <motion.div
                       animate={{
-                        rotate: [0, -15, 15, -15, 15, 0, 0],
+                        rotate: [0, -7, 7, -7, 7, 0, 0],
                       }}
                       transition={{
-                        duration: 8,
+                        duration: 5,
                         times: [0, 0.025, 0.05, 0.075, 0.1, 0.125, 1],
                         repeat: Infinity,
                         ease: "easeInOut",
@@ -296,7 +298,7 @@ Add CTAs and lead-capture points anywhere you need, and turn more visitors into 
               </div>
             </div>
           </div>
-          <div className=" shadow  border rounded-xl ">
+          <div className=" shadow  border min-h- rounded-xl ">
             <div
               className=" flex flex-col justify-between font-openSans overflow-hidden max-w-lg items-center
               min-h-40 h-full w-full relative rounded-xl
@@ -315,218 +317,143 @@ Add CTAs and lead-capture points anywhere you need, and turn more visitors into 
                 className=" absolute top-0 left-0 w-full h-full   bg-[radial-gradient(ellipse_at_0%_100%,rgba(456,123,11,1)_4%,rgba(0,0,0,0)_60%)]
              "
               ></span>
-              <div className=" rounded-sm overflow-hidden opacity-95 z-20 my-10 w-66">
-                <div className=" p-1 px-2 bg-white transition-all  flex items-center  justify-between  self-center">
-                  <div className=" flex items-center gap-1">
-                    <motion.div
-                      layout
-                      key={tick >= 1 ? "check" : "loading"} // important!
-                      initial={{
-                        scale: 0.8,
-                        opacity: 0.6,
-                        filter: "blur(1px)",
-                      }}
-                      animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    >
-                      {tick >= 1 ? (
-                        <CircleCheck
-                          size={20}
-                          className=" fill-green-600 text-white "
-                        />
-                      ) : (
-                        <LoaderCircle
-                          size={20}
-                          className="animate-spin text-neutral-500 "
-                        />
-                      )}
-                    </motion.div>
-                    <div className=" text-sm  font-medium">Homepage</div>
+              <div className="relative w-fit  rounded-xl flex-1 flex items-center justify-center z-20 p-8">
+                <div className=" w-full md:w-80 bg-white rounded-lg shadow-sm border border-neutral-200 overflow-hidden flex flex-col">
+                  {/* Browser Header */}
+                  <div className="h-6 bg-neutral-50 border-b border-neutral-100 flex items-center px-3 gap-1.5">
+                    <div className="w-2 h-2 rounded-full bg-neutral-300" />
+                    <div className="w-2 h-2 rounded-full bg-neutral-300" />
+                    <div className="w-2 h-2 rounded-full bg-neutral-300" />
                   </div>
 
-                  <motion.div className=" my-1" layout>
-                    {tick >= 1 ? (
-                      <motion.span
-                        key="completed"
-                        initial={{ x: 20, opacity: 0, filter: "blur(4px)" }}
-                        animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-                        transition={{ duration: 0.4, ease: "linear" }}
-                        className="text-xs text-white font-medium border border-transparent bg-amber-300/30 p-1 rounded-[3px] px-3  inline-block"
-                      >
-                        Completed
-                      </motion.span>
-                    ) : (
-                      <motion.span
-                        key="updating"
-                        initial={{ x: 0, opacity: 1 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.2 }}
-                        className="text-xs text-neutral-400 font-medium border p-1 border-neutral-700 rounded-[3px]  px-2 inline-block"
-                      >
-                        Updating
-                      </motion.span>
-                    )}
-                  </motion.div>
-                </div>{" "}
-                <hr />
-                <div className=" p-1 px-2 bg-white transition-all  flex items-center  justify-between  self-center">
-                  <div className=" flex items-center gap-1">
-                    <motion.div
-                      layout
-                      key={tick >= 2 ? "check" : "loading"} // important!
-                      initial={{
-                        scale: 0.8,
-                        opacity: 0.6,
-                        filter: "blur(1px)",
-                      }}
-                      animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    >
-                      {tick >= 2 ? (
-                        <CircleCheck
-                          size={20}
-                          className=" fill-green-600 text-white "
-                        />
-                      ) : (
-                        <LoaderCircle
-                          size={20}
-                          className="animate-spin text-neutral-500 "
-                        />
-                      )}
-                    </motion.div>
-                    <div className=" text-sm  font-medium">Blog</div>
-                  </div>
+                  {/* Page Content */}
+                  <div className="flex h-full min-h-[200px] px-7">
+                    {/* Sidebar Hint */}
+                    {/* <div className="w-12 border-r border-neutral-100 bg-neutral-50/30 flex flex-col items-center py-3 gap-2">
+                      <div className="w-6 h-6 rounded bg-neutral-200/50 mb-1" />
+                      <div className="w-4 h-1 rounded-full bg-neutral-200/50" />
+                      <div className="w-4 h-1 rounded-full bg-neutral-200/50" />
+                      <div className="w-4 h-1 rounded-full bg-neutral-200/50" />
+                    </div> */}
 
-                  <motion.div className=" my-1" layout>
-                    {tick >= 2 ? (
-                      <motion.span
-                        key="completed"
-                        initial={{ x: 20, opacity: 0, filter: "blur(4px)" }}
-                        animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-                        transition={{ duration: 0.4, ease: "linear" }}
-                        className="text-xs text-white font-medium border border-transparent bg-amber-300/40 p-1 rounded-[3px] px-3  inline-block"
-                      >
-                        Completed
-                      </motion.span>
-                    ) : (
-                      <motion.span
-                        key="updating"
-                        initial={{ x: 0, opacity: 1 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.2 }}
-                        className="text-xs text-neutral-400 font-medium border p-1 border-neutral-700 rounded-[3px]  px-2 inline-block"
-                      >
-                        Updating
-                      </motion.span>
-                    )}
-                  </motion.div>
-                </div>{" "}
-                <hr />
-                <div className=" p-1 px-2 bg-white transition-all  flex items-center  justify-between  self-center">
-                  <div className=" flex items-center gap-1">
-                    <motion.div
-                      layout
-                      key={tick >= 3 ? "check" : "loading"} // important!
-                      initial={{
-                        scale: 0.8,
-                        opacity: 0.6,
-                        filter: "blur(1px)",
-                      }}
-                      animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    >
-                      {tick >= 3 ? (
-                        <CircleCheck
-                          size={20}
-                          className=" fill-green-600 text-white "
-                        />
-                      ) : (
-                        <LoaderCircle
-                          size={20}
-                          className="animate-spin text-neutral-500 "
-                        />
-                      )}
-                    </motion.div>
-                    <div className=" text-sm  font-medium">Careers</div>
-                  </div>
+                    {/* Main Grid Area */}
+                    <div className="flex-1 p-4 flex flex-col">
+                      {/* Hero Row */}
+                      <div className="w-full h-12 bg-neutral-800  border border-neutral-700 flex items-center px-3 shadow-sm">
+                        <span className="text-[10px] text-start font-semibold text-neutral-100">
+                          Case Study: Fintech
+                        </span>
+                      </div>
 
-                  <motion.div className=" my-1" layout>
-                    {tick >= 3 ? (
-                      <motion.span
-                        key="completed"
-                        initial={{ x: 20, opacity: 0, filter: "blur(4px)" }}
-                        animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-                        transition={{ duration: 0.4, ease: "linear" }}
-                        className="text-xs text-white font-medium border border-transparent bg-amber-300/40 p-1 rounded-[3px] px-3  inline-block"
-                      >
-                        Completed
-                      </motion.span>
-                    ) : (
-                      <motion.span
-                        key="updating"
-                        initial={{ x: 0, opacity: 1 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.2 }}
-                        className="text-xs text-neutral-400 font-medium border p-1 border-neutral-700 rounded-[3px]  px-2 inline-block"
-                      >
-                        Updating
-                      </motion.span>
-                    )}
-                  </motion.div>
-                </div>{" "}
-                <hr />
-                <div className=" p-1 px-2 bg-white transition-all  flex items-center  justify-between  self-center">
-                  <div className=" flex items-center gap-1">
-                    <motion.div
-                      layout
-                      key={tick >= 4 ? "check" : "loading"} // important!
-                      initial={{
-                        scale: 0.8,
-                        opacity: 0.6,
-                        filter: "blur(1px)",
-                      }}
-                      animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    >
-                      {tick >= 4 ? (
-                        <CircleCheck
-                          size={20}
-                          className=" fill-green-600 text-white "
-                        />
-                      ) : (
-                        <LoaderCircle
-                          size={20}
-                          className="animate-spin text-neutral-500 "
-                        />
-                      )}
-                    </motion.div>
-                    <div className=" text-sm font-medium">Contact</div>
-                  </div>
+                      <div className="grid grid-cols-10  w-full">
+                        {/* Row 1: Static 70/30 */}
+                        <div className="col-span-7 h-10 bg-neutral-50  border border-neutral-200 shadow-sm flex items-center justify-center">
+                          <span className="text-[9px] font-medium text-neutral-400">
+                            Q3 Performance
+                          </span>
+                        </div>
+                        <div className="col-span-3 h-10 bg-neutral-50  border border-neutral-200 shadow-sm flex items-center justify-center">
+                          <span className="text-[9px] font-medium text-neutral-400">
+                            ROI
+                          </span>
+                        </div>
+                        
+                        
 
-                  <motion.div className=" my-1" layout>
-                    {tick >= 4 ? (
-                      <motion.span
-                        key="completed"
-                        initial={{ x: 20, opacity: 0, filter: "blur(4px)" }}
-                        animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-                        transition={{ duration: 0.4, ease: "linear" }}
-                        className="text-xs text-white font-medium border border-transparent bg-amber-300/40 p-1 rounded-[3px] px-3  inline-block"
-                      >
-                        Completed
-                      </motion.span>
-                    ) : (
-                      <motion.span
-                        key="updating"
-                        initial={{ x: 0, opacity: 1 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.2 }}
-                        className="text-xs text-neutral-400 font-medium border p-1 rounded-[3px]  px-2 inline-block"
-                      >
-                        Updating
-                      </motion.span>
-                    )}
-                  </motion.div>
-                </div>{" "}
+                        {/* Row 2: Static 30 / Animated 70 */}
+                        <div className="col-span-3 h-10 bg-neutral-50  border border-neutral-200 shadow-sm flex items-center justify-center">
+                          <span className="text-[9px] font-medium text-neutral-400">
+                            Traffic
+                          </span>
+                        </div>
+                        <div className="col-span-7 h-10 relative">
+                          <motion.div
+                            animate={{ opacity: [0, 1, 0, 0] }}
+                            transition={{
+                              duration: 6,
+                              repeat: Infinity,
+                              times: [0, 0.1, 0.2, 1],
+                            }}
+                            className="absolute inset-0  border-2 border-dashed border-amber-400/60 flex items-center justify-center"
+                          />
+                          <motion.div
+                            animate={{
+                              opacity: [0, 0, 1, 1, 0],
+                              scale: [0.9, 0.9, 1, 1, 0.9],
+                            }}
+                            transition={{
+                              duration: 6,
+                              repeat: Infinity,
+                              times: [0, 0.15, 0.25, 0.9, 1],
+                            }}
+                            className="absolute inset-0 bg-blue-50  border border-blue-100 shadow-sm flex items-center justify-center"
+                          >
+                            <span className="text-[9px] font-medium text-blue-600">
+                              User Growth
+                            </span>
+                          </motion.div>
+                        </div>
+                        
+
+                        {/* Row 3: Animated 50/50 */}
+                        <div className="col-span-10 h-10 relative">
+                          <motion.div
+                            animate={{ opacity: [0, 0, 1, 0, 0] }}
+                            transition={{
+                              duration: 6,
+                              repeat: Infinity,
+                              times: [0, 0.3, 0.4, 0.5, 1],
+                            }}
+                            className="absolute inset-0  border-2 border-dashed border-amber-400/60 flex items-center justify-center"
+                          />
+                          <motion.div
+                            animate={{
+                              opacity: [0, 0, 0, 1, 1, 0],
+                              scale: [0.9, 0.9, 0.9, 1, 1, 0.9],
+                            }}
+                            transition={{
+                              duration: 6,
+                              repeat: Infinity,
+                              times: [0, 0.35, 0.4, 0.45, 0.9, 1],
+                            }}
+                            className="absolute inset-0 bg-purple-50  border border-purple-100 shadow-sm flex items-center justify-center"
+                          >
+                            <span className="text-[9px] font-medium text-purple-600">
+                             Testimonial
+                            </span>
+                          </motion.div>
+                        </div>
+                        <div className="col-span-10 h-10 relative">
+                          <motion.div
+                            animate={{ opacity: [0, 0, 0, 1, 0, 0] }}
+                            transition={{
+                              duration: 6,
+                              repeat: Infinity,
+                              times: [0, 0.5, 0.6, 0.7, 1],
+                            }}
+                            className="absolute inset-0  border-2 border-dashed border-amber-400/60 flex items-center justify-center"
+                          />
+                          <motion.div
+                            animate={{
+                              opacity: [0, 0, 0, 0, 1, 1, 0],
+                              scale: [0.9, 0.9, 0.9, 0.9, 1, 1, 0.9],
+                            }}
+                            transition={{
+                              duration: 6,
+                              repeat: Infinity,
+                              times: [0, 0.55, 0.6, 0.65, 0.7, 0.9, 1],
+                            }}
+                            className="absolute inset-0 bg-emerald-50  border border-emerald-100 shadow-sm flex items-center justify-center"
+                          >
+                            <span className="text-[9px] font-medium text-emerald-600">
+                              CTA
+                            </span>
+                          </motion.div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className=" text-white z-10 p-10 min-h-40 bg-[linear-gradient(180deg,rgba(9,10,12,0)_0%,#090A0C_40.76%)]">
                 <p>

@@ -64,7 +64,10 @@
 
 @theme inline {
   --font-instrument: "Instrument Serif", serif;
+  --font-caveat: "Caveat", serif;
   --font-openSans: "Open Sans", sans-serif;
+  --padding-mobile-primary: 1.75rem;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -143,4 +146,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html{
+  scroll-behavior: smooth;
 }
