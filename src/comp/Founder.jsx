@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import wasifImage from "../assets/wasif.png";
 
 const Founder = () => {
   return (
@@ -11,7 +12,7 @@ const Founder = () => {
           <div className="flex items-center gap-5">
             {/* Avatar Placeholder */}
             <div className="w-20 h-20 rounded-xl bg-neutral-800 border border-neutral-700 flex items-center justify-center overflow-hidden shadow-lg">
-               <img className='w-full h-full object-cover object-top transform scale-140 transition-all' src="src/assets/wasif.png" alt="" />
+               <img className='w-full h-full object-cover object-top transform scale-140 transition-all' src={wasifImage} alt="" />
             </div>
             <div className=' text-start'>
               <h3 className="text-2xl font-bold text-white font-instrument tracking-wider">Wasif Kareem</h3>

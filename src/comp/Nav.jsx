@@ -1,10 +1,11 @@
 import React from "react";
+import fabinaIcon from "../assets/fabina-icon.png";
 
 const Nav = () => {
   return (
     <div className="  flex font-openSans px-6 justify-between z-10 items-center backdrop-blur-md text-white max-w-7xl  w-full py-5 ">
       <div className=" flex items-center gap-28 justify-between">
-        <a href="/" className=" flex items-center gap-2 font-bold text-2xl font-openSans md:text-xl"><img className=" h-10 border rounded-sm border-white/20" src="src/assets/fabina-icon.png"/>Fabina</a>
+        <a href="/" className=" flex items-center gap-2 font-bold text-2xl font-openSans md:text-xl"><img className=" h-10 border rounded-sm border-white/20" src={fabinaIcon}/>Fabina</a>
         <div className=" hidden md:flex flex-row text-md gap-7">
           <div>
             <a href="/#work">Work</a>

@@ -3,6 +3,7 @@ import { BookerEmbed } from "@calcom/atoms";
 import "@calcom/atoms/globals.min.css";
 import { Loader2 } from "lucide-react";
 import { motion } from "motion/react";
+import fabinaIcon from "../assets/fabina-icon.png";
 
 const Contact = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,7 +17,7 @@ const Contact = () => {
   return (
     <div className="w-full min-h-screen bg-black text-white flex flex-col items-center">
       <a href="/" className=" flex items-center mt-20 my-5 gap-2 font-bold text-2xl font-openSans md:text-xl">
-        <img className=" h-10 border rounded-sm  border-white/20" src="src/assets/fabina-icon.png"/>Fabina
+        <img className=" h-10 border rounded-sm  border-white/20" src={fabinaIcon}/>Fabina
       </a>
       <motion.div 
         initial={{ width: "400px", opacity: 0 }}
@@ -27,7 +28,7 @@ const Contact = () => {
       >
         {!isLoaded && (
           <div className="flex justify-center items-center h-[600px]">
-            <img src='src/assets/fabina-icon.png' className="animate-pulse rounded-sm text-black w-10 h-10" />
+            <img src={fabinaIcon} className="animate-pulse rounded-sm text-black w-10 h-10" />
           </div>
         )}
         <div className={isLoaded ? "block opacity-100 transition-opacity duration-500" : "hidden opacity-0"}>

@@ -8,6 +8,9 @@ import {
   LucideCircleMinus,
   MinusIcon,
 } from "lucide-react";
+import pocketworks from "../assets/pocketworks.png";
+import slackLogo from "../assets/slack-logo.png";
+import tobinReview from "../assets/tobinreview.png";
 
 const Project = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -93,7 +96,7 @@ const Project = () => {
         <div className=" col-span-5 lg:col-span-2">
           <div className=" w-full ">
             <img
-              src="src/assets/pocketworks.png"
+              src={pocketworks}
               className=" rounded-2xl border"
               alt=""
             />
@@ -108,7 +111,7 @@ const Project = () => {
             >
               <div className=" flex items-center gap-2">
                 <motion.img
-                  src="src/assets/slack-logo.png"
+                  src={slackLogo}
                   className=" h-9  bg-white rounded-full py-1 border -left-7 "
                   alt=""
                   variants={{
@@ -133,7 +136,7 @@ const Project = () => {
               </div>
               <motion.img
                 className="  rounded-lg md:h-20 h-12 "
-                src="src/assets/tobinreview.png"
+                src={tobinReview}
                 alt=""
                 variants={{
                   hidden: { opacity: 0, x: -20, filter: "blur(5px)" },

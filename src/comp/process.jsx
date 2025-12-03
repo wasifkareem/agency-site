@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import greenPaper from "../assets/papers/green.svg";
+import amberPaper from "../assets/papers/amber.svg";
 
 const Process = () => {
   const containerRef = useRef(null);
@@ -83,7 +85,7 @@ const Process = () => {
           <div
             className="lg:mt-40 order-2 lg:order-1 mx-6 font-openSans pb-20 shadow-xl max-w-sm p-10 lg:-rotate-12 px-7 relative overflow-hidden border-slate-200/20 backdrop-blur-xl text-start border-4 rounded-sm"
             style={{
-              background: "url(src/assets/papers/green.svg)",
+              background: `url(${greenPaper})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -107,7 +109,7 @@ const Process = () => {
           <div
             className="h-fit order-1 lg:order-2 mx-6 font-openSans pb-20 shadow-xl max-w-sm p-10 lg:rotate-12 px-7 relative overflow-hidden border-slate-200/20 backdrop-blur-xl text-start border-4 rounded-sm"
             style={{
-              background: "url(src/assets/papers/amber.svg)",
+              background: `url(${amberPaper})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -135,7 +137,7 @@ const Process = () => {
           <div
             className="lg:mt-40 order-2 lg:order-1 mx-6 font-openSans pb-20 shadow-xl  max-w-sm p-10 lg:-rotate-12 px-7 relative overflow-hidden border-slate-200/20 backdrop-blur-xl text-start border-4 rounded-sm"
             style={{
-              background: "url(src/assets/papers/green.svg)",
+              background: `url(${greenPaper})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -159,7 +161,7 @@ const Process = () => {
           <div
             className="h-fit order-1 lg:order-2 mx-6 font-openSans pb-20 shadow-xl max-w-sm p-10 lg:rotate-12 px-7 relative overflow-hidden border-slate-200/20 backdrop-blur-xl text-start border-4 rounded-sm"
             style={{
-              background: "url(src/assets/papers/amber.svg)",
+              background: `url(${amberPaper})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -186,7 +188,7 @@ const Process = () => {
           <div
             className="lg:mt-40 order-2 lg:order-1 mx-6 font-openSans pb-20 shadow-xl max-w-sm p-10 lg:-rotate-12 px-7 relative overflow-hidden border-slate-200/20 backdrop-blur-xl text-start border-4 rounded-sm"
             style={{
-              background: "url(src/assets/papers/green.svg)",
+              background: `url(${greenPaper})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -210,7 +212,7 @@ const Process = () => {
           <div
             className="h-fit order-1 lg:order-2 mx-6 font-openSans pb-20 shadow-xl max-w-sm p-10 lg:rotate-12 px-7 relative overflow-hidden border-slate-200/20 backdrop-blur-xl text-start border-4 rounded-sm"
             style={{
-              background: "url(src/assets/papers/amber.svg)",
+              background: `url(${amberPaper})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
