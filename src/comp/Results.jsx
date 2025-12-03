@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SingularityShaders } from "../components/ui/shadcn-io/singularity-shaders";
+
 import { Particles } from "../components/ui/shadcn-io/particles";
 import { CircleCheck, LoaderCircle, LayoutTemplate } from "lucide-react";
 import { motion, useMotionValue, useTransform } from "motion/react";
@@ -141,14 +141,6 @@ const Results = () => {
               
             "
             >
-              <SingularityShaders
-                className=" absolute translate-x-1 top-0 z-10 left-0 h-4/5 min-h-[400px]  w-full"
-                speed={1.0}
-                intensity={1.2}
-                size={1}
-                waveStrength={3}
-                colorShift={1.0}
-              />
               <span
                 className=" absolute top-0 left-0 w-full h-full  bg-[radial-gradient(ellipse_at_90%_110%,rgba(456,123,11,1)_4%,rgba(0,0,0,0)_60%)]
              "

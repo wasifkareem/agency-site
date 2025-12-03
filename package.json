@@ -23,7 +23,6 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.10.0",
-    "react-shaders": "^0.0.4",
     "react-smoke": "^1.2.0",
     "react-tsparticles": "^2.12.2",
     "react-water-wave": "^2.0.1",
