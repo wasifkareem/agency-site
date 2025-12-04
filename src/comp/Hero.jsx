@@ -1,6 +1,7 @@
 import React from "react";
 import { Particles } from "../components/ui/shadcn-io/particles";
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 import {
   CandlestickChart,
   Layers,
@@ -47,10 +48,10 @@ const Hero = () => {
         <button
           className="group relative bg-white hover:bg-amber-100 font-openSans hover:scale-105 rounded-3xl h-16 md:h-20 p-1.5 font-semibold text-neutral-800 w-fit self-center mt-10 md:mt-16 text-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_18px_6px_rgba(255,193,1,0.45)]"
         >
-          <a href="/contact" className=" z-10 w-full font-openSans h-full px-8 md:px-10 text-center flex text-lg md:text-xl justify-center items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all ">
+          <Link to="/contact" className=" z-10 w-full font-openSans h-full px-8 md:px-10 text-center flex text-lg md:text-xl justify-center items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all ">
             {" "}
             Let's Talk
-          </a>
+          </Link>
         </button>
         <div className=" hidden md:flex md:mt-24 justify-center items-center gap-5">
           <p

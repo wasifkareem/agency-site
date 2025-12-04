@@ -3,6 +3,7 @@ import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import {DottedGlowBackground} from "../components/ui/dotted-glow-background";
 import { CircleStar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Package = () => {
   const packages = [
@@ -81,7 +82,7 @@ const Package = () => {
                 ))}
               </ul>
 
-              <a href="/contact"
+              <Link to="/contact"
               
                 className={`w-full py-3 rounded-lg font-medium transition-all ${
                   pkg.highlight
@@ -90,7 +91,7 @@ const Package = () => {
                 }`}
               >
                {pkg.cta}
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>
