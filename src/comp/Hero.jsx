@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 const Hero = () => {
   return (
-    <div className=" h-[760px] sm:h-[950px] relative flex justify-center flex-col items-center ">
+    <div className=" h-[760px] sm:h-[1050px] relative flex justify-center flex-col items-center ">
       {/* <HeroRipple
         style={{
           background: "linear-gradient(180deg,#081426 0%, #052033 100%)",
@@ -19,7 +19,8 @@ const Hero = () => {
       /> */}
 
       <Nav />
-
+      
+      <div className="absolute top-0 right-0 w-[80%] h-[60%] z-20 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,rgba(255,193,1,0.25)_0%,rgba(0,0,0,0)_60%)] mix-blend-screen"></div>
       <Particles
         className="absolute inset-0  top-0 bg-[radial-gradient(ellipse_at_top,rgba(10,20,60,1)_0%,rgba(0,0,0,1)_70%)]  left-0 h-full  w-full "
         quantity={100}
@@ -57,38 +58,38 @@ const Hero = () => {
           <p
             className=" flex gap-3 items-center rounded-full px-6 py-2  group rounded-full px-6 py-2 backdrop-blur-xs border border-white/15 
              shadow-[0_6px_16px_rgba(0,0,0,0.5)]
-             [box-shadow:inset_0_7px_12px_rgba(9,18,55,2)] text-white/85 hover:bg-[#dddcff0e] transition-all  text-sm
+             [box-shadow:inset_0_10px_12px_rgba(9,18,55,2)] text-white/85 hover:bg-[#dddcff0e] transition-all  text-sm
     md:p-2 md:px-4"
           >
             <PackagePlus
               className=" text-shadow-2xs text-[#7f95ee] "
               size={16}
             />
-            Update Without Developers
+            Composable CMS Sites
           </p>
           <p
             className=" flex gap-3 items-center rounded-full px-6 py-2  group rounded-full px-6 py-2 backdrop-blur-xs border border-white/15 
             shadow-[0_6px_16px_rgba(0,0,0,0.5)]
-            [box-shadow:inset_0_7px_12px_rgba(9,18,55,2)] text-white/85 hover:bg-[#dddcff0e] transition-all  text-sm
+            [box-shadow:inset_0_10px_12px_rgba(9,18,55,2)] text-white/85 hover:bg-[#dddcff0e] transition-all  text-sm
    md:p-2 md:px-4"
           >
             <Layers
               className="  text-[#7f95ee]  transition-all text-shadow-2xs drop-shadow-amber-500"
               size={16}
             />
-            Flexible Component System
+           Scalable Design
           </p>
           <p
             className=" flex gap-3 items-center rounded-full px-6 py-2  group rounded-full px-6 py-2 backdrop-blur-xs border border-white/15 
              shadow-[0_6px_16px_rgba(0,0,0,0.5)]
-             [box-shadow:inset_0_7px_12px_rgba(9,18,55,2)] text-white/85 hover:bg-[#dddcff0e] transition-all  text-sm
+             [box-shadow:inset_0_10px_12px_rgba(9,18,55,2)] text-white/85 hover:bg-[#dddcff0e] transition-all  text-sm
     md:p-2 md:px-4"
           >
             <CandlestickChart
               className=" text-[#7f95ee]    text-shadow-2xs drop-shadow-amber-500"
               size={16}
             />
-            Built for MQL Growth
+            Built for Conversions
           </p>
         </div>
       </div>

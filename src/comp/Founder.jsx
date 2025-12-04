@@ -39,7 +39,7 @@ const Founder = () => {
             <ArrowUpRight size={18} className="text-neutral-600 group-hover:text-white group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
           </a>
           
-           <a href="mailto:wasifkareem2762@gmail.com" className="group flex items-center justify-between py-3 border-b border-neutral-800 text-neutral-300 hover:text-white transition-colors">
+           <a href="mailto:wasif@fabina.studio" className="group flex items-center justify-between py-3 border-b border-neutral-800 text-neutral-300 hover:text-white transition-colors">
             <span className="font-medium">Email</span>
             <ArrowUpRight size={18} className="text-neutral-600 group-hover:text-white group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
           </a>
