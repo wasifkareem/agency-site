@@ -55,8 +55,8 @@ const Project = () => {
             Collaboration with Pocketworks
           </h2>
           {/* subtitle */}
-          <p className=" ">
-            Their previous website was rigid, forcing their marketing team to
+          <p>
+            <a href="https://www.linkedin.com/in/wasifdev2762/" className=" text-blue-700" target="_blank">Wasif Kareem</a>, founder of Fabina Studio, worked for Pocketworks to rebuild their website. Their previous website was rigid, forcing their marketing team to
             wait for days to update. We rebuilt it as a fully CMS-driven website
             — giving them complete control to edit pages, update content, and
             launch campaigns without developer involvement.
