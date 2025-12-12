@@ -65,7 +65,7 @@ const Hero = () => {
               className=" text-shadow-2xs text-[#7f95ee] "
               size={16}
             />
-            Composable CMS Sites
+          Full Editorial Control
           </p>
           <p
             className=" flex gap-3 items-center rounded-full px-6 py-2  group rounded-full px-6 py-2 backdrop-blur-xs border border-white/15 

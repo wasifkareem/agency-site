@@ -98,7 +98,7 @@ const Project = () => {
             <img
               src={pocketworks}
               className=" rounded-2xl border"
-              alt=""
+              alt="Pocketworks Website Redesign"
             />
             <motion.div 
               className=" flex items-start mt-6 gap-2"
@@ -113,7 +113,7 @@ const Project = () => {
                 <motion.img
                   src={slackLogo}
                   className=" h-9  bg-white rounded-full py-1 border -left-7 "
-                  alt=""
+                  alt="Slack Logo"
                   variants={{
                     hidden: { opacity: 0, scale: 0, rotate: -180 },
                     visible: { 
@@ -137,7 +137,7 @@ const Project = () => {
               <motion.img
                 className="  rounded-lg md:h-20 h-12 "
                 src={tobinReview}
-                alt=""
+                alt="Review from Tobin at Pocketworks"
                 variants={{
                   hidden: { opacity: 0, x: -20, filter: "blur(5px)" },
                   visible: { opacity: 1, x: 0, filter: "blur(0px)", transition: { duration: 0.5 } }
