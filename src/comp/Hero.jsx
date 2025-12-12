@@ -43,7 +43,7 @@ const Hero = () => {
             Built for  <br />Modern Marketing Teams
           </h1>
           <p className=" font-openSans text-lg md:text-xl leading-8">
-          We help marketing teams turn outdated sites into scalable, high-converting<br/> CMS websites that drive engagement, leads, and growth.
+          We help marketing teams turn outdated sites into fully-editable, high-converting<br/> CMS websites that drive engagement, leads, and growth.
           </p>
         </div>
         <button
