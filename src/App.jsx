@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Footer from "./comp/Footer";
 import { Analytics } from "@vercel/analytics/react"
+import Competition from "./pages/Competition";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/free-website" element={<Competition />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
