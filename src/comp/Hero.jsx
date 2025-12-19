@@ -2,6 +2,8 @@ import React from "react";
 import { Particles } from "../components/ui/shadcn-io/particles";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
+import WAIcon from "../assets/WhatsApp.svg";
+
 import {
   CandlestickChart,
   Layers,
@@ -51,7 +53,7 @@ const Hero = () => {
         >
           <Link to="https://wa.me/+917052929702?text=Hello!%20Could%20we%20discuss%20a%20possible%20project%20together%3F" className=" z-10 w-full font-openSans h-full px-8 md:px-5 text-center flex text-lg md:text-xl items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all justify-between gap-2">
             {" "}
-            Let's Chat <img src="public/WhatsApp.svg" className=" h-10"/>
+            Let's Chat <img src={WAIcon} alt="WhatsApp-logo" className=" h-10"/>
           </Link>
         </button>
         <div className=" hidden md:flex md:mt-24 justify-center items-center gap-5">
