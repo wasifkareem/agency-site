@@ -20,9 +20,7 @@ const Nav = () => {
           </div> <div>
             <a href="/#price">Pricing</a>
           </div>
-          <div>
-            <Link to="/contact">Contact Us</Link>
-          </div>
+          
         </div>
       </div>
 
