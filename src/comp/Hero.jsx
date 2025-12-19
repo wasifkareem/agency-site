@@ -51,7 +51,7 @@ const Hero = () => {
         <button
           className="group relative bg-white hover:bg-amber-100 font-openSans hover:scale-105 rounded-3xl h-16 md:h-20 p-1.5 font-semibold text-neutral-800 w-fit self-center mt-10 md:mt-16 text-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_18px_6px_rgba(255,193,1,0.45)]"
         >
-          <Link to="https://wa.me/+917052929702?text=Hello!%20Could%20we%20discuss%20a%20possible%20project%20together%3F" className=" z-10 w-full font-openSans h-full px-8 md:px-5 text-center flex text-lg md:text-xl items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all justify-between gap-2">
+          <Link to="https://wa.me/+917052929702?text=Hello!%20Could%20we%20discuss%20a%20possible%20project%20together%3F" className=" z-10 w-full font-openSans h-full px-5 text-center flex text-lg md:text-xl items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all justify-between gap-2">
             {" "}
             Let's Chat <img src={WAIcon} alt="WhatsApp-logo" className=" h-10"/>
           </Link>
