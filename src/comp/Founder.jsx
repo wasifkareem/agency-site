@@ -4,7 +4,7 @@ import wasifImage from "../assets/wasif.png";
 
 const Founder = () => {
   return (
-    <div className="w-full bg-black py-24 flex justify-center px-6">
+    <div className="w-full bg-black py-20 md:py-32 flex justify-center px-6">
       <div className="max-w-4xl w-full bg-neutral-900/20 border border-neutral-800 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-12 justify-between">
         
         {/* Left Side */}
@@ -21,7 +21,7 @@ const Founder = () => {
           </div>
           
           <p className="text-neutral-300 text-lg leading-relaxed font-openSans font-light">
-            "Hey, I'm Wasif. In today's fast-paced digital landscape, businesses need more than just a website, they need a scalable, flexible engine for growth. I specialize in building <span className="text-white font-medium">CMS-first, composable websites</span> that empower teams to move fast, iterate quickly, and stay ahead of the competition."
+            "Hey, I'm Wasif. In today's fast-paced digital landscape, businesses need more than just a website, they need a scalable, flexible engine for growth. I specialize in building <span className="text-white font-medium">CMS-first, modular websites</span> that empower teams to move fast, iterate quickly, and stay ahead of the competition."
           </p>
         </div>
 

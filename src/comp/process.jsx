@@ -13,10 +13,12 @@ const Process = () => {
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div id="process" ref={containerRef} className="w-full relative mt-10 ">
-      <h2 className="font-instrument my-5 mt-10 md:mt-20 text-4xl md:text-7xl text-center">
-        Our Process, Step by Step
-      </h2>
+    <section id="process" ref={containerRef} className="w-full relative py-20 md:py-32">
+      <div className="text-center mb-16 md:mb-24">
+        <h2 className="font-instrument text-4xl md:text-7xl font-bold text-neutral-900 mb-6">
+          Our Process, Step by Step
+        </h2>
+      </div>
 
       {/* Animated Path SVG */}
       <svg
@@ -35,7 +37,7 @@ const Process = () => {
           C 700 800, 1050 750, 1200 900 
           C 1400 1100, 800 1250, 500 1000 
           C 800 1950, 1400 1200, 1200 1600
-          C 1400 1100, 800 2250, 500 2000 "
+          C 1400 1100, 800 2250, 500 1700 "
               fill="none"
               stroke="white"
               strokeWidth="6"
@@ -52,7 +54,7 @@ const Process = () => {
           C 700 800, 1050 750, 1200 900 
           C 1400 1100, 800 1250, 500 1000 
           C 800 1950, 1400 1200, 1200 1600
-          C 1400 1100, 800 2250, 500 2000 
+          C 1400 1100, 800 2250, 500 1700 
           "
           fill="none"
           stroke="#9ca3af"
@@ -68,7 +70,7 @@ const Process = () => {
           C 700 800, 1050 750, 1200 900 
           C 1400 1100, 800 1250, 500 1000 
           C 800 1950, 1400 1200, 1200 1600
-          C 1400 1100, 800 2250, 500 2000 "
+          C 1400 1100, 800 2250, 500 1700 "
           fill="none"
           stroke="#f59e0b"
           strokeWidth="4"
@@ -235,7 +237,7 @@ const Process = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

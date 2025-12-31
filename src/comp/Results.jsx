@@ -38,7 +38,7 @@ const Results = () => {
           What we can help you to achieve?
         </p>
        </div>
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 w-full max-w-7xl items-stretch text-start">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mt-14  gap-4 w-full max-w-7xl items-stretch text-start">
           <div className=" shadow  border min-h- rounded-xl ">
             <div
               className=" flex flex-col justify-between font-openSans overflow-hidden max-w-lg items-center

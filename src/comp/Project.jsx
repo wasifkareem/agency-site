@@ -27,7 +27,7 @@ const Project = () => {
      <a 
      target="_blank"
      href="https://pocketworks.co.uk/"
-      className={`scroll-mt-32 ${isHovering ? 'cursor-none' : ''}`}
+      className={` ${isHovering ? 'cursor-none' : ''}`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       onMouseMove={handleMouseMove}
@@ -48,7 +48,12 @@ const Project = () => {
           Explore <ArrowUpRight className=" rounded-full border-dashed border" size={20}/>
         </motion.div>
       )}
-      <div className=" grid grid-cols-4 max-w-[1300px]  p-mobile-primary py-16 md:p-10 -mt-16 relative bg-white  border rounded-2xl   ">
+      <div className="text-center mb-16 my-10 md:my-20">
+        <h2 className="font-instrument text-4xl md:text-7xl font-bold text-neutral-900 mb-6">
+          Past Work
+        </h2>
+      </div>
+      <div className=" grid grid-cols-4 max-w-[1300px]  p-mobile-primary py-16 md:p-10 relative bg-white  border    ">
         <div className=" font-openSans col-span-5 lg:col-span-2 text-start pr-16 md:pr-24 flex flex-col gap-3 mb-10">
           {" "}
           <h2 className=" font-instrument text-4xl">
@@ -57,9 +62,8 @@ const Project = () => {
           {/* subtitle */}
           <p>
             <a href="https://www.linkedin.com/in/wasifdev2762/" className=" text-blue-700" target="_blank">Wasif Kareem</a>, founder of Fabina Studio, worked for Pocketworks to rebuild their website. Their previous website was rigid, forcing their marketing team to
-            wait for days to update. We rebuilt it as a fully CMS-driven website
-            — giving them complete control to edit pages, update content, and
-            launch campaigns without developer involvement.
+            wait for days to update resulting in missing marketing deadlines. we helped them remove these bottlenecks, giving them complete control to edit pages, update content, and
+            launch campaigns without creating an IT ticket.
           </p>
           {/* bullet */}
           <div className=" hidden  lg:flex flex-col gap-3 mt-8">
@@ -88,7 +92,7 @@ const Project = () => {
                   New
                 </span>{" "}
               </span>
-              Fully CMS-driven site — marketing updates content in minutes,
+              Fully CMS-driven site - marketing updates content in minutes,
               enabling faster campaigns and more qualified leads.
             </p>
           </div>

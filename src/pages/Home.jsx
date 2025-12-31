@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../comp/Hero";
+import ProblemSolution from "../comp/ProblemSolution";
 import Project from "../comp/Project";
 import Results from "../comp/Results";
 import Process from "../comp/process";
@@ -22,8 +23,9 @@ const Home = () => {
          </p>
       </Link> */}
       <Hero id="particles" />
-      <Project />
+      <ProblemSolution />
       <Results />
+      <Project />
       <Process/>
       <Package/>
       <Founder />

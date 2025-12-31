@@ -39,21 +39,21 @@ const Hero = () => {
               className="  [text-shadow:0_0_5px_rgba(255,210,80,1),0_0_14px_rgba(255,200,60,0.9)]
 "
             >
-              Premium websites
+              Scalable websites
             </span>{" "}
            
-            Built for  <br />Modern Startups and Businesses
+            Built<br /> for  Modern B2B teams
           </h1>
           <p className=" font-openSans text-lg md:text-xl leading-8">
-          We help teams turn outdated sites into fully-editable, high-converting<br/> CMS websites that drive engagement, leads, and growth.
+         We remove marketing website bottlenecks, making it easier for marketing<br/> to grow sales pipeline without tapping engineering team everytime
           </p>
         </div>
         <button
           className="group relative bg-white hover:bg-amber-100 font-openSans hover:scale-105 rounded-3xl h-16 md:h-20 p-1.5 font-semibold text-neutral-800 w-fit self-center mt-10 md:mt-16 text-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_18px_6px_rgba(255,193,1,0.45)]"
         >
-          <Link to="https://wa.me/+917052929702?text=Hello!%20Could%20we%20discuss%20a%20possible%20project%20together%3F" className=" z-10 w-full font-openSans h-full px-5 text-center flex text-lg md:text-xl items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all justify-between gap-2">
+          <Link target="_blank" to="https://cal.com/fabina/15min" className=" z-10 w-full font-openSans h-full px-5 text-center flex text-lg md:text-xl items-center rounded-3xl bg-linear-to-b from-neutral-300/70 via-neutral-100 to-neutral-50 shadow transition-all justify-between gap-2">
             {" "}
-            Let's Chat <img src={WAIcon} alt="WhatsApp-logo" className=" h-10"/>
+            Let's Talk
           </Link>
         </button>
         <div className=" hidden md:flex md:mt-24 justify-center items-center gap-5">
@@ -67,7 +67,7 @@ const Hero = () => {
               className=" text-shadow-2xs text-[#7f95ee] "
               size={16}
             />
-          Full Editorial Control
+          No Bottlenecks
           </p>
           <p
             className=" flex gap-3 items-center rounded-full px-6 py-2  group rounded-full px-6 py-2 backdrop-blur-xs border border-white/15 
@@ -79,7 +79,7 @@ const Hero = () => {
               className="  text-[#7f95ee]  transition-all text-shadow-2xs drop-shadow-amber-500"
               size={16}
             />
-           Scalable Design
+          faster A/B testing
           </p>
           <p
             className=" flex gap-3 items-center rounded-full px-6 py-2  group rounded-full px-6 py-2 backdrop-blur-xs border border-white/15 
@@ -91,7 +91,7 @@ const Hero = () => {
               className=" text-[#7f95ee]    text-shadow-2xs drop-shadow-amber-500"
               size={16}
             />
-            Built for Conversions
+            Better conversions
           </p>
         </div>
       </div>

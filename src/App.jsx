@@ -13,7 +13,7 @@ function App() {
     <Analytics/>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
         {/* <Route path="/free-website" element={<Competition />} /> */}
       </Routes>
       <Footer />
