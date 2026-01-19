@@ -57,9 +57,7 @@ const Package = () => {
                 <p className="text-neutral-300 text-base leading-relaxed mt-6 border-l-2 border-amber-500 pl-4 text-left">
                     {pkg.pitch}
                 </p>
-                <p className="text-neutral-400 text-sm md:text-base mt-4 font-medium">
-                  <span className="text-amber-500">ETA:</span> {pkg.eta}
-                </p>
+                
               </div>
 
               <div className="mb-4">

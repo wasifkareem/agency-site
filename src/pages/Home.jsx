@@ -27,7 +27,7 @@ const Home = () => {
       <Results />
       <Project />
       <Process/>
-      <Package/>
+      {/* <Package/> */}
       <Founder />
     </div>
   );
